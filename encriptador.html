@@ -32,19 +32,20 @@ saltarLinea();
 for (contador = 0;contador<longitudCadena; contador++){
     var letra = codigoAencriptar.charAt(contador);
     if (letra=="a"){
-        
-    };
-
-
+        oracion = oracion + a;
+    }else if (letra=="o"){
+        oracion = oracion + o;
+    }
+    else{
+        oracion = oracion + letra;
+    }
 
 
 };
 
 
 
-    
-document.write(nuevaCadena);
-
+        document.write(oracion);
 
 
 
