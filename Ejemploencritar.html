@@ -1,0 +1,48 @@
+
+<script>
+
+const encryptionDict = {
+  'a': 'ai',
+  'e': 'enter',
+  'i': 'limes',
+  'o': 'ober',
+  'u': 'ufat'
+};
+
+function encrypt(word) {
+  let encryptedWord = '';
+  for (let i = 0; i < word.length; i++) {
+    const letter = word[i];
+    encryptedWord += encryptionDict[letter] || letter;
+  }
+  return encryptedWord;
+}
+
+function decrypt(word) {
+  const decryptionDict = {};
+  for (const key in encryptionDict) {
+    const value = encryptionDict[key];
+    decryptionDict[value] = key;
+  }
+  let decryptedWord = '';
+  let i = 0;
+  while (i < word.length) {
+    const letter = word[i];
+    if (letter in decryptionDict) {
+      decryptedWord += decryptionDict[letter];
+      i += letter.length;
+    } else {
+      decryptedWord += letter;
+      i++;
+    }
+  }
+  return decryptedWord;
+}
+
+
+var palabra = "gaitober"
+decrypt(palabra)
+
+
+
+</script>
