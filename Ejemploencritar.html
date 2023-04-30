@@ -1,15 +1,18 @@
+<!DOCTYPE html>
 
 <script>
 
+/*Diccionario con palabras y su valor*/
 const encryptionDict = {
   'a': 'ai',
   'e': 'enter',
-  'i': 'limes',
+  'i': 'imes',
   'o': 'ober',
   'u': 'ufat'
 };
 
-function encrypt(word) {
+/*Funcion para encriptar*/
+function encriptar(word) {
   let encryptedWord = '';
   for (let i = 0; i < word.length; i++) {
     const letter = word[i];
@@ -18,31 +21,85 @@ function encrypt(word) {
   return encryptedWord;
 }
 
+
 function decrypt(word) {
+  let decryptedWord = '';
   const decryptionDict = {};
+  
+  /*Invierte del diccionario
   for (const key in encryptionDict) {
     const value = encryptionDict[key];
     decryptionDict[value] = key;
-  }
-  let decryptedWord = '';
-  let i = 0;
-  while (i < word.length) {
-    const letter = word[i];
-    if (letter in decryptionDict) {
-      decryptedWord += decryptionDict[letter];
-      i += letter.length;
-    } else {
-      decryptedWord += letter;
-      i++;
+  }*/
+
+  for (let i = 0; i < word.length;i++) {
+    if(word[i] == "a"){
+      let palabra = "";
+      for(let j =i; j< word.length; j++) {
+        palabra = palabra+word[j];
+        if(palabra == "ai"){
+          decryptedWord+= "a";
+          i=j;
+          break;
+        }
+      }
+    }
+    else if (word[i] == "e"){
+      let palabra = "";
+      for(let j =i; j< word.length; j++) {
+        palabra += word[j];
+        if(palabra == "enter"){
+          decryptedWord+= "e";
+          i=j;
+          break;
+        }
+      }
+    }
+    else if (word[i] == "i"){
+      let palabra = "";
+      for(let j =i; j< word.length; j++) {
+        palabra += word[j];
+        if(palabra == "imes"){
+          decryptedWord+= "i";
+          i=j;
+          break;
+        }
+      }
+      
+    }
+    else if (word[i] == "o"){
+      let palabra = "";
+      for(let j =i; j< word.length; j++) {
+        palabra +=  word[j];
+        if(palabra == "ober"){
+          decryptedWord+= "o";
+          i=j;
+          break;
+        }
+      }
+    }
+    else if (word[i] == "u"){
+      let palabra = "";
+      for(let j =i; j< word.length; j++) {
+        palabra +=  word[j];
+        if(palabra == "ufat"){
+          decryptedWord+= "u";
+          i=j;
+          break;
+        }
+      }
+    }
+    else{
+      decryptedWord+=word[i]
     }
   }
   return decryptedWord;
 }
 
 
-var palabra = "gaitober"
-decrypt(palabra)
+var palabra = "Hoberlai menter llaimober Dainimesenterl Rufatailenters, y sobery imesngenternimesenterrober Agrimescoberlai";
 
+document.write(decrypt(palabra));
 
 
 </script>
