@@ -24,13 +24,7 @@ function encriptar(word) {
 
 function decrypt(word) {
   let decryptedWord = '';
-  const decryptionDict = {};
   
-  /*Invierte del diccionario
-  for (const key in encryptionDict) {
-    const value = encryptionDict[key];
-    decryptionDict[value] = key;
-  }*/
 
   for (let i = 0; i < word.length;i++) {
     if(word[i] == "a"){
