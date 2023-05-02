@@ -3,7 +3,7 @@
 <script>
 
 /*Diccionario con palabras y su valor*/
-const encryptionDict = {
+const diccionario = {
   'a': 'ai',
   'e': 'enter',
   'i': 'imes',
@@ -13,17 +13,17 @@ const encryptionDict = {
 
 /*Funcion para encriptar*/
 function encriptar(word) {
-  let encryptedWord = '';
+  let palabraAencriptar = '';
   for (let i = 0; i < word.length; i++) {
     const letter = word[i];
-    encryptedWord += encryptionDict[letter] || letter;
+    palabraAencriptar += diccionario[letter] || letter;
   }
-  return encryptedWord;
+  return palabraAencriptar;
 }
 
 
-function decrypt(word) {
-  let decryptedWord = '';
+function desencriptar(word) {
+  let palabraDesencriptada = '';
   
 
   for (let i = 0; i < word.length;i++) {
@@ -32,7 +32,7 @@ function decrypt(word) {
       for(let j =i; j< word.length; j++) {
         palabra = palabra+word[j];
         if(palabra == "ai"){
-          decryptedWord+= "a";
+          palabraDesencriptada+= "a";
           i=j;
           break;
         }
@@ -43,7 +43,7 @@ function decrypt(word) {
       for(let j =i; j< word.length; j++) {
         palabra += word[j];
         if(palabra == "enter"){
-          decryptedWord+= "e";
+          palabraDesencriptada+= "e";
           i=j;
           break;
         }
@@ -54,7 +54,7 @@ function decrypt(word) {
       for(let j =i; j< word.length; j++) {
         palabra += word[j];
         if(palabra == "imes"){
-          decryptedWord+= "i";
+          palabraDesencriptada+= "i";
           i=j;
           break;
         }
@@ -66,7 +66,7 @@ function decrypt(word) {
       for(let j =i; j< word.length; j++) {
         palabra +=  word[j];
         if(palabra == "ober"){
-          decryptedWord+= "o";
+          palabraDesencriptada+= "o";
           i=j;
           break;
         }
@@ -77,23 +77,23 @@ function decrypt(word) {
       for(let j =i; j< word.length; j++) {
         palabra +=  word[j];
         if(palabra == "ufat"){
-          decryptedWord+= "u";
+          palabraDesencriptada+= "u";
           i=j;
           break;
         }
       }
     }
     else{
-      decryptedWord+=word[i]
+      palabraDesencriptada+=word[i]
     }
   }
-  return decryptedWord;
+  return palabraDesencriptada;
 }
 
 
-var palabra = "Hoberlai menter llaimober Dainimesenterl Rufatailenters, y sobery imesngenternimesenterrober Agrimescoberlai";
+var palabra = "Zenterufats enters ufatn paijairober mufaty limesndober";
 
-document.write(decrypt(palabra));
+document.write(desencriptar(palabra));
 
 
 </script>
