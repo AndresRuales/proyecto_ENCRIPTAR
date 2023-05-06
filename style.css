@@ -7,28 +7,20 @@
     overflow-y: hidden;
 }
 
-.logo{
-    padding: 20px 0;
-    position: relative;
-    margin: 40px 50px;
-    
-}
 
-main{
-    /*alinear la distribucion */
-    display: flex;
-    margin-bottom:50px;
-    margin-left:40px;
+  
+.logo{
+    padding:3%;
 }
 
 .inputTexto{
+    position: absolute;
     border: none;
-    width: 60%;
+    width: 50%;
     color: #0A3871;
-    margin-top: 30px;
-    margin-left: 280px;
     font-size: 1.3em;
-    
+    margin-left: 20%;
+
 }
 
 ::placeholder{ color:#0A3871;}
@@ -38,30 +30,25 @@ main{
 }
 
 .mensajeEncriptado{
-    position:absolute;
+    position: absolute;
     background: white;
     background-image: url("imagenes/Muneco.png");
     background-repeat: no-repeat;
-    background-position:50% 50% ;
-    height: 780px;
+    background-position:50% 40% ;
+    height: 880px;
     width: 350px;
     border:none;
     border-radius: 24px;
+    margin-left: 80%;
+    margin-top: -6%;
     color:#0A3871;
     text-align: center;
-    top:60px;
-    right: 200px;
+    padding-top: 1%;
     resize: none;
-    
 }
 
 .mensajeEncriptado:focus{
     outline: none;
-}
-
-.botones{
-    display:flex;
-    margin-top:-200px;
 }
 
 
@@ -74,7 +61,8 @@ main{
     cursor: pointer;
     height: 67px;
     width:328px;
-    margin-left: 350px;
+    top: 85%;
+    left: 20%;
     
     
 }
@@ -88,8 +76,11 @@ main{
     color: #0A3871;
     cursor: pointer;
     height: 67px;
-    width:336px;
-    margin-left: 700px;
+    width:328px;
+    top: 85%;
+    left: 38%;
+   
+    
     
 }
 
@@ -101,14 +92,25 @@ main{
     color: #0A3871;
     cursor: pointer;
     height: 67px;
-    margin-left: 580px;
-    margin-top:402px;
-    position: absolute;
     width: 336px;
+    top: 85%;
+    margin-left: 80.5%;
+}
+
+.info{
+    position: absolute;
+    top: 81.7%;
+    left: 20%;
     
+
 }
 
 .infomacion{
+    position: absolute;
     color: #495057;
     font-size: 18px;
+    top: 80%;
+    left: 22%;
 }
+
+
