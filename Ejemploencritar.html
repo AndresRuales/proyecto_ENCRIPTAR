@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-
-
 <html lang ="es">
-
-
   <head>
     <meta charset="utf-8">
     <title> Encriptador </title>
@@ -31,8 +27,8 @@
         </div>
 
         <div class="botones">
-          <button class="boton-encriptar">Encriptar</button>
-          <button class="boton-desencriptar">Desencriptar</button>
+          <button class="boton-encriptar" onclick="btnEncriptar()">Encriptar</button>
+          <button class="boton-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
         </div>
 
       </section>
@@ -40,7 +36,7 @@
       <section>
           <textarea class="mensajeEncriptado" col="50"rows="10" placeholder="" ></textarea>
           <div>
-            <button class="copiar">Copiar</button>
+            <button class="copiar" onclick="btnCopiar()">Copiar</button>
           </div>
       </section>
 
@@ -50,99 +46,4 @@
 
 <html>
 
-
-
-<script>
-
-/*Diccionario con palabras y su valor*/
-const diccionario = {
-  'a': 'ai',
-  'e': 'enter',
-  'i': 'imes',
-  'o': 'ober',
-  'u': 'ufat'
-};
-
-/*Funcion para encriptar*/
-function encriptar(word) {
-  let palabraAencriptar = '';
-  for (let i = 0; i < word.length; i++) {
-    const letter = word[i];
-    palabraAencriptar += diccionario[letter] || letter;
-  }
-  return palabraAencriptar;
-}
-
-
-function desencriptar(word) {
-  let palabraDesencriptada = '';
-  
-
-  for (let i = 0; i < word.length;i++) {
-    if(word[i] == "a"){
-      let palabra = "";
-      for(let j =i; j< word.length; j++) {
-        palabra = palabra+word[j];
-        if(palabra == "ai"){
-          palabraDesencriptada+= "a";
-          i=j;
-          break;
-        }
-      }
-    }
-    else if (word[i] == "e"){
-      let palabra = "";
-      for(let j =i; j< word.length; j++) {
-        palabra += word[j];
-        if(palabra == "enter"){
-          palabraDesencriptada+= "e";
-          i=j;
-          break;
-        }
-      }
-    }
-    else if (word[i] == "i"){
-      let palabra = "";
-      for(let j =i; j< word.length; j++) {
-        palabra += word[j];
-        if(palabra == "imes"){
-          palabraDesencriptada+= "i";
-          i=j;
-          break;
-        }
-      }
-      
-    }
-    else if (word[i] == "o"){
-      let palabra = "";
-      for(let j =i; j< word.length; j++) {
-        palabra +=  word[j];
-        if(palabra == "ober"){
-          palabraDesencriptada+= "o";
-          i=j;
-          break;
-        }
-      }
-    }
-    else if (word[i] == "u"){
-      let palabra = "";
-      for(let j =i; j< word.length; j++) {
-        palabra +=  word[j];
-        if(palabra == "ufat"){
-          palabraDesencriptada+= "u";
-          i=j;
-          break;
-        }
-      }
-    }
-    else{
-      palabraDesencriptada+=word[i]
-    }
-  }
-  return palabraDesencriptada;
-}
-
-
-
-
-</script>
+<script src="script.js"></script>
