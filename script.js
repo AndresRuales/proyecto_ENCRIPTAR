@@ -20,8 +20,11 @@ function btnDesencriptar(){
 }
 
 function btnCopiar(){
-    const textoCopiado = document.getElementById(mensajeEncriptado).value;
-    navigator.clipboard.writeText(textoCopiado);
+    const textoCopiado = document.getElementById("mensajeEncriptado");
+    const texto = textoCopiado.value;
+    navigator.clipboard.writeText(texto);
+
+
 }
 
 
