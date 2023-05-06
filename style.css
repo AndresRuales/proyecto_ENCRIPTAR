@@ -34,7 +34,7 @@
     background: white;
     background-image: url("imagenes/Muneco.png");
     background-repeat: no-repeat;
-    background-position:50% 40% ;
+    background-position:50% 45% ;
     height: 855px;
     width: 350px;
     border:none;
@@ -123,5 +123,4 @@
     top: 80%;
     left: 22%;
 }
-
 
