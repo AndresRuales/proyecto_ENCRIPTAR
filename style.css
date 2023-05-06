@@ -63,9 +63,13 @@
     width:328px;
     top: 85%;
     left: 20%;
-    
-    
 }
+
+.boton-encriptar:hover{
+    
+    transform: scale(1.1);
+}
+
 
 
 .boton-desencriptar{
@@ -79,11 +83,12 @@
     width:328px;
     top: 85%;
     left: 38%;
-   
-    
-    
 }
 
+.boton-desencriptar:hover{
+    
+    transform: scale(1.1);
+}
 
 .copiar{
     position: absolute;
@@ -96,6 +101,12 @@
     top: 85%;
     margin-left: 80.5%;
 }
+
+.copiar:hover{
+    
+    transform: scale(1.1);
+}
+
 
 .info{
     position: absolute;
