@@ -4,14 +4,13 @@
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
+    overflow-y: hidden;
 }
 
 .logo{
     padding: 20px 0;
     position: relative;
-    /*0 en la parte superior e inferior y automatico a los bordes*/
-    /*Es auto para que el navegador automaticamente configure la centralizacion*/
-    margin: 80px 80px;
+    margin: 40px 50px;
     
 }
 
@@ -19,35 +18,40 @@ main{
     /*alinear la distribucion */
     display: flex;
     margin-bottom:50px;
-    margin-left: 80px;
+    margin-left:40px;
 }
 
-.text-area{
+.inputTexto{
     border: none;
+    width: 60%;
     color: #0A3871;
     margin-top: 30px;
     margin-left: 280px;
+    font-size: 1.3em;
+    
 }
 
 ::placeholder{ color:#0A3871;}
 
-.text-area:focus {
-        outline:none;
-    }
+.inputTexto:focus {
+    outline:none;
+}
 
 .mensajeEncriptado{
+    position:absolute;
     background: white;
     background-image: url("imagenes/Muneco.png");
     background-repeat: no-repeat;
+    background-position:50% 50% ;
+    height: 780px;
+    width: 350px;
     border:none;
     border-radius: 24px;
     color:#0A3871;
-    margin-left: 98px;
-    margin-top:20px;
-    padding-left: 20px;
-    position:absolute;
-    top:110px;
+    text-align: center;
+    top:60px;
     right: 200px;
+    resize: none;
     
 }
 
@@ -57,11 +61,12 @@ main{
 
 .botones{
     display:flex;
-    margin-top:18px;
+    margin-top:-200px;
 }
 
 
 .boton-encriptar{
+    position: absolute;
     background-color:#0A3871;
     border: 1px solid #0A3871;
     border-radius: 24px;
@@ -69,11 +74,14 @@ main{
     cursor: pointer;
     height: 67px;
     width:328px;
+    margin-left: 350px;
+    
+    
 }
 
 
 .boton-desencriptar{
-
+    position: absolute;
     background: #D8DFE8;
     border: 1px solid #0A3871;
     border-radius: 24px;
@@ -81,25 +89,26 @@ main{
     cursor: pointer;
     height: 67px;
     width:336px;
-    margin-left: 30px;
-    margin-top:328px;
+    margin-left: 700px;
+    
 }
 
 
 .copiar{
+    position: absolute;
     border: 1px solid #0A3871;
     border-radius: 24px;
     color: #0A3871;
     cursor: pointer;
     height: 67px;
-    margin-left: 108px;
+    margin-left: 580px;
     margin-top:402px;
     position: absolute;
     width: 336px;
+    
 }
 
 .infomacion{
     color: #495057;
     font-size: 18px;
-
 }
