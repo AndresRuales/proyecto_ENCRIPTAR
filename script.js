@@ -1,7 +1,8 @@
 /*PARA CAPTURAR LO DEL usuario del textarea*/
 const word = document.querySelector(".inputTexto")
 const mensajeEncriptado = document.querySelector(".mensajeEncriptado")
-
+const etiqueta1= document.querySelector(".ningun")
+const etiqueta2= document.querySelector(".ingresa")
 
 
 
@@ -23,8 +24,14 @@ function btnCopiar(){
     const textoCopiado = document.getElementById("mensajeEncriptado");
     const texto = textoCopiado.value;
     navigator.clipboard.writeText(texto);
+    mensajeEncriptado.style.backgroundImage="none"
 
 
+}
+
+function eliminarEtiquetasP(){
+  etiqueta1.remove();
+  etiqueta2.remove();
 }
 
 

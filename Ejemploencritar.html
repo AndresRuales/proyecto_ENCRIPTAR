@@ -27,19 +27,23 @@
         </div>
 
         <div class="botones">
-          <button class="boton-encriptar" onclick="btnEncriptar()">Encriptar</button>
-          <button class="boton-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+          <button class="boton-encriptar" onclick="btnEncriptar(); eliminarEtiquetasP()">Encriptar</button>
+          <button class="boton-desencriptar" onclick="btnDesencriptar(); eliminarEtiquetasP()">Desencriptar</button>
         </div>
 
       </section>
 
       <section>
-          <textarea id="mensajeEncriptado" class="mensajeEncriptado" col="50"rows="10" placeholder="" ></textarea>
+          <textarea id="mensajeEncriptado" class="mensajeEncriptado" col="50"rows="10"></textarea>
           <div>
-            <button class="copiar" onclick="btnCopiar()">Copiar</button>
+            <button class="copiar" onclick="btnCopiar();eliminarEtiquetasP()">Copiar</button>
           </div>
       </section>
 
+      <section>
+        <p class="ningun">Ningún mensaje fue encontrado</p>
+        <p class="ingresa">Ingresa el texto que desees encriptar o desencriptar</p>
+      </section>
     
 
     </main>

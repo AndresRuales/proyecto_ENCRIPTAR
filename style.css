@@ -34,7 +34,7 @@
     background: white;
     background-image: url("imagenes/Muneco.png");
     background-repeat: no-repeat;
-    background-position:50% 45% ;
+    background-position:50% 35% ;
     height: 855px;
     width: 350px;
     border:none;
@@ -63,6 +63,7 @@
     width:328px;
     top: 85%;
     left: 20%;
+    
 }
 
 .boton-encriptar:hover{
@@ -123,4 +124,39 @@
     top: 80%;
     left: 22%;
 }
+
+.ningun{
+    position: absolute;
+    background-color: white;
+    width: 350px;
+    height: 90px;
+    color: #343A40;
+    font-family: 'Inter';
+    font-style: normal;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9em;
+    top:58%;
+    left: 80%;
+
+    
+}
+
+.ingresa{
+    position: absolute;
+    background-color: white;
+    width: 350px;
+    height: 80px;
+    color: #343A40;
+    font-family: 'Inter';
+    font-style:italic;
+    text-align: center;
+    font-weight: 400;
+    font-size: 60%;
+    top:67%;
+    left: 80%;
+
+    
+}
+
 
