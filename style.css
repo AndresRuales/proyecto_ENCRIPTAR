@@ -20,7 +20,6 @@
     color: #0A3871;
     font-size: 1.3em;
     margin-left: 20%;
-
 }
 
 ::placeholder{ color:#0A3871;}
@@ -113,8 +112,6 @@
     position: absolute;
     top: 81.7%;
     left: 20%;
-    
-
 }
 
 .infomacion{
@@ -160,3 +157,53 @@
 }
 
 
+@media screen and (max-width:480px){
+    .logo{
+        position:absolute;
+        top:50px;
+    }
+    
+    .inputTexto{
+        position: absolute;
+        top:150px;
+    
+    }
+
+    .mensajeEncriptado{
+        top:50px;
+    }
+
+    .boton-encriptar{
+        position:absolute;
+        top:120%;
+        
+    }
+    .boton-desencriptar{
+        position:absolute;
+        top:130%;
+        left: 20%;
+    }
+    .infomacion{
+        position: absolute;
+        top:115%;
+        left: 30%;
+    }
+
+    .info{
+        position: absolute;
+        top: 117%;
+        left: 20%;
+    }
+
+    .ningun{
+        position: absolute;
+        top:60%;
+        left: 80%;
+    }
+
+    .ingresa{
+        position: absolute;
+        top:70%;
+        left: 80%;
+    }
+}
